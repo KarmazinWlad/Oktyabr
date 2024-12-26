@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
 }
 body{
     font-family: 'CoFo Holz VF', sans-serif;
@@ -27,6 +28,8 @@ img {
 .container{
     width: 100%;
     margin: 0 auto;
+    background-color: white;
+    z-index: 1;
 }
 header{
     position: fixed;
@@ -43,8 +46,9 @@ header nav ul.first{
 }
 header nav .favorite{
     float:right;
-    margin-top: 10px;
-    margin-right: 10px;
+    width: 35px;
+    margin-top: 19px;
+    margin-right: 15px;
 }
 header nav ul{
     display: flex;
@@ -149,11 +153,38 @@ header nav div.line{
     width: all;
     background-color: black;
 }
-
+.burger{
+    width: 50px;
+}
+.bar{
+    display: block;
+    width: 30px;
+    height: 1.5px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+.burgerMenu{
+    margin-top: 23.31px;
+    justify-content: left;
+    display: none;
+}
+.popup{
+    margin: 0;
+}
+@media screen and (max-width: 1000px) {
+    .burgerMenu{display: flex;}
+    .MainMenu{display: none;}
+}
 main{
+    margin-top: 145.67px;
     margin-left: 16px;
     margin-right: 23px;
-    padding-top: 160px;
+    z-index: 0;
+}
+main.gallery{
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
 }
 main h1{
     font-size: xx-large;
@@ -188,7 +219,57 @@ main ul li:not(.active) a:hover{
 .gallery{
     width: 100%;
 }
-.container{
+.cont{
     display: flex;
-    position: relative;;
+    position: relative;
+}
+.cont section:not(.endline){
+    margin-right: 10px;
+    width: 90%;
+}
+.gallery_item{
+    box-shadow:0px 0px 10px 0px gray;
+}
+.endline{
+    width: 90%;
+}
+.author{
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+}
+.series{
+    text-transform: uppercase;
+    text-align: left;
+}
+.series sup{
+    text-transform:lowercase;
+}
+.atribute{
+    text-align: right;
+}
+.year{
+    text-align: right;
+    margin-bottom: 30px;
+}
+.item p{
+    padding: 0;
+    width: 100%;
+}
+.line1{
+    margin-top: 160px;
+}
+.heart{
+    position: absolute;
+    width: 12%;
+    right: 2.75%;
+    top: 2.19%;
+    opacity: 0%;
+}
+.item:hover .heart{
+    opacity: 100%;
+}
+.cont section{
+    position: relative;
 }
