@@ -9,7 +9,6 @@ window.addEventListener('scroll', () =>{
 });
 for(const element of document.getElementsByClassName("heart")){
     element.addEventListener('click', () => {
-        console(element.src);
         if(element.src=="img/img.png"){
             element.src="img/img1.png";
         }
