@@ -189,5 +189,6 @@ main ul li:not(.active) a:hover{
     width: 100%;
 }
 .container{
-    position: flex;
+    display: flex;
+    position: relative;;
 }
