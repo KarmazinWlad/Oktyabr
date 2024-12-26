@@ -9,11 +9,11 @@ window.addEventListener('scroll', () =>{
 });
 for(const element of document.getElementsByClassName("heart")){
     element.addEventListener('click', () => {
-        if(element.src=="file:///C:/Users/karma/Desktop/site/img/img.png"){
-            element.src="C:/Users/karma/Desktop/site/img/img1.png";
+        if(element.src=="https://karmazinwlad.github.io/Oktyabr/img/img.png"){
+            element.src="https://karmazinwlad.github.io/Oktyabr/img/img1.png";
         }
-        else if(element.src=="file:///C:/Users/karma/Desktop/site/img/img1.png"){
-            element.src="C:/Users/karma/Desktop/site/img/img.png";
+        else if(element.src=="https://karmazinwlad.github.io/Oktyabr/img/img1.png"){
+            element.src="https://karmazinwlad.github.io/Oktyabr/img/img.png";
         }
     });
 }
