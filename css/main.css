@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'CoFo Holz VF';
+    src: local('CoFo Holz VF'), url(C:\Users\karma\Desktop\www\font\cofoholzvf.ttf) format('ttf'),
+    url(C:\Users\karma\Desktop\www\font\cofoholzvf.woff2) format('woff2'),
+    url(C:\Users\karma\Desktop\www\font\cofoholzvf.woff) format('woff'),
+    url(C:\Users\karma\Desktop\www\font\cofoholzvf.eot) format('eot');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'CoFo Holz VF', sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+ul{
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    position: fixed;
+    top: 0;
+    background-color: white ;
+}
+header nav{
+    float: left;
+    width: 100%;
+}
+header nav ul.first{
+    font-size: 15px;
+    width: 40%;
+}
+header nav .favorite{
+    float:right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 23px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+header nav ul.second li{
+    left: 16px;
+    right: 23px;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+header nav ul.second li a sup.small{
+    letter-spacing:0px;
+    font-size: 12px;
+    margin-right: 9px;
+}
+header nav ul li.active{
+    font-weight: bold;
+}
+header nav ul li:not(.active) a:hover{
+    color:red;
+    transition: all 500ms ease;
+}
+header nav ul div.arrow{
+    width:calc(100% - 280px);
+}
+header nav ul div.arrow div{
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: all;
+    background-color: black;
+    position: relative;
+    top: 13px;
+}
+header nav ul div.arrow div::after{
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: 4px;
+    background-color: black;
+    position: absolute;
+    top: 1.5px;
+    right: -0.5px;
+    transform: rotate(-45deg);
+}
+header nav ul div.arrow div::before{
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: 4px;
+    background-color: black;
+    position: absolute;
+    top: -1px;
+    right: -0.5px;
+    transform: rotate(45deg);
+}
+header nav ul div.arrow-2{
+    position: absolute;
+    width: 63px;
+    right: 8px;
+}
+header nav ul div.arrow-2 div{
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: all;
+    background-color: black;
+    position: relative;
+    top: 16px;
+}
+header nav ul div.arrow-2 div::after{
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: 4px;
+    background-color: black;
+    position: absolute;
+    top: 1px;
+    right: -0.5px;
+    transform: rotate(-45deg);
+}
+header nav ul div.arrow-2 div::before{
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: 4px;
+    background-color: black;
+    position: absolute;
+    top: -1.5px;
+    right: -0.5px;
+    transform: rotate(45deg);
+}
+header nav div.line{
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: all;
+    background-color: black;
+}
+
+main{
+    margin-left: 16px;
+    margin-right: 23px;
+    padding-top: 160px;
+}
+main h1{
+    font-size: xx-large;
+    font-weight: 500;
+    padding-bottom: 28px;
+    padding-top: 10px;
+}
+main h2{
+    margin-left: 5px;
+    padding-bottom: 12px;
+}
+main p{
+    font-size: small;
+    padding-bottom: 40px;
+    width: 60%;
+}
+main ul{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    float: left;
+}
+main ul li{
+    font-size: small;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}   
+main ul li:not(.active) a:hover{
+    color:red;
+    transition: all 500ms ease;
+}
