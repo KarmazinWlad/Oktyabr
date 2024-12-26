@@ -185,3 +185,9 @@ main ul li:not(.active) a:hover{
     color:red;
     transition: all 500ms ease;
 }
+.gallery{
+    width: 100%;
+}
+.container{
+    position: flex;
+}
