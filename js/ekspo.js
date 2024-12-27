@@ -15,9 +15,11 @@ const element14 = document.getElementById("area14");
 const element15 = document.getElementById("area15");
 const element16 = document.getElementById("area16");
 const map = document.getElementById("map");
+var mon = window.innerHeight-145.67;
 var x = map.clientWidth;
 var y = map.clientHeight;
 function coords(){
+    map.style.height = mon;
     x = map.clientWidth;
     y = map.clientHeight;
     element1.coords = `${x*0.049}, ${y*0.02}, ${x*0.213}, ${y*0.3}`;
