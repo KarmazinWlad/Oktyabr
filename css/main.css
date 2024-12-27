@@ -181,6 +181,7 @@ header nav div.line{
     .line1{display: none;}
     .endline{display: none;}
     .actual{display: none;}
+    .contact{width: 100%;}
 }
 main{
     position: relative;
@@ -293,9 +294,8 @@ main ul li:not(.active) a:hover{
 }
 .art{
     display: flex;
-    width: 150%;
+    min-width: 125%;
     height: auto;
-    overflow: hidden;
 }
 .art div{
     width: auto;
@@ -321,6 +321,8 @@ main ul li:not(.active) a:hover{
     position: relative;
     width: 100%;
     height: 46px;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 .spisok li{
     padding-top: 10px;
@@ -341,7 +343,8 @@ main .Line{
 .ecspo{
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 iframe{
     width: 100%;
