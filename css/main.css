@@ -320,7 +320,7 @@ main ul li:not(.active) a:hover{
 .spisok{
     position: relative;
     width: 100%;
-    height: 46px;
+    height: auto;
     overflow: hidden;
     overflow-x: scroll;
 }
@@ -343,6 +343,8 @@ main .Line{
 .ecspo{
     margin-left: 0;
     margin-right: 0;
+}
+.ecspo img{
     min-width: 100%;
     min-height: 100%;
 }
