@@ -183,6 +183,7 @@ header nav div.line{
     .actual{display: none;}
     .line2{margin-right: 10px; margin-left: 10px;}
     .art img{height: 35dvh;}
+    .contact{width: 100%;}
 }
 main{
     position: relative;
