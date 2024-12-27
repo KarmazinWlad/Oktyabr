@@ -182,6 +182,7 @@ header nav div.line{
     .endline{display: none;}
     .actual{display: none;}
     .line2{margin-right: 10px; margin-left: 10px;}
+    .art img{height: 35dvh;}
 }
 main{
     position: relative;
