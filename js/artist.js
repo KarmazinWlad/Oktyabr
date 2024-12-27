@@ -10,6 +10,9 @@ function list () {
         elements.style.width = `${wid}px`;
     }
 }
-list();
+for(var i = 0; i < 4; i++){
+    list();
+}
 window.addEventListener('resize', list);
+window.addEventListener('scroll', list);
 window.addEventListener('click', list);

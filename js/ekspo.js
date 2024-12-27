@@ -39,4 +39,5 @@ function coords(){
 }
 coords();
 window.addEventListener('resize', coords);
+window.addEventListener('scroll', coords);
 window.addEventListener('click', coords);
