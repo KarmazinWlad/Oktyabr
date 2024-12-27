@@ -19,6 +19,7 @@ var mon = window.innerHeight-145.67;
 var x = map.clientWidth;
 var y = map.clientHeight;
 function coords(){
+    mon = window.innerHeight-145.67;
     map.style.height = mon;
     x = map.clientWidth;
     y = map.clientHeight;
