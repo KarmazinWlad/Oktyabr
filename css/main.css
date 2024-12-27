@@ -181,7 +181,7 @@ header nav div.line{
     .line1{display: none;}
     .endline{display: none;}
     .actual{display: none;}
-    .line2{margin-right: 0; padding-right: 0;}
+    .line2{margin-right: 10px; margin-left: 10px;}
 }
 main{
     position: relative;
