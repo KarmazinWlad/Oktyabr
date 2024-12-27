@@ -318,7 +318,7 @@ main ul li:not(.active) a:hover{
 .spisok{
     position: relative;
     width: 100%;
-    height: 46px;
+    height: auto;
     overflow: hidden;
     overflow-x: scroll;
 }
