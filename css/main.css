@@ -181,7 +181,7 @@ header nav div.line{
     .line1{display: none;}
     .endline{display: none;}
     .actual{display: none;}
-    .contact{width: 100%;}
+    .line2{margin-right: 0; padding-right: 0;}
 }
 main{
     position: relative;
@@ -294,18 +294,15 @@ main ul li:not(.active) a:hover{
 }
 .art{
     display: flex;
-    min-width: 125%;
+    width: 100%;
     height: auto;
+    overflow: hidden;
 }
-.art div{
+.art img{
     width: auto;
     height: 50dvh;
     padding: 0;
     padding-right: 1%;
-}
-.art div img{
-    height: 100%;
-    width: auto;
 }
 .auth{
     position: relative;
@@ -320,9 +317,7 @@ main ul li:not(.active) a:hover{
 .spisok{
     position: relative;
     width: 100%;
-    height: auto;
-    overflow: hidden;
-    overflow-x: scroll;
+    height: 46px;
 }
 .spisok li{
     padding-top: 10px;
@@ -343,10 +338,7 @@ main .Line{
 .ecspo{
     margin-left: 0;
     margin-right: 0;
-}
-.ecspo img{
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
 }
 iframe{
     width: 100%;
