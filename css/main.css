@@ -338,7 +338,6 @@ main ul li:not(.active) a:hover{
 .spisok ul li{
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-right: 0px;
     display: inline;
     width: min-content;
 }
@@ -398,6 +397,7 @@ main .Line{
     overflow: hidden;
     overflow-y: scroll;
     overflow-x: scroll;
+    aspect-ratio: 16/10;
 }
 #map{
     min-width: 100%;
