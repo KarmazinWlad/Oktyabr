@@ -18,11 +18,12 @@ const map = document.getElementById("map");
 var h = window.innerHeight-145.67;
 var x = map.clientWidth;
 var y = map.clientHeight;
+const ratio = x / y;
 function coords(){
     h = window.innerHeight-145.67;
     if (map.clientHeight < h){
         map.style.height = `${h}px`;
-        map.style.width = "auto";
+        map.style.width = `${h*ratio}px`;
     }
     else {
         map.style.width = "100%";
