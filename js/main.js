@@ -16,6 +16,14 @@ if('ontouchstart' in window || navigator.maxTouchPoints){
             window.scrollTo(0, document.getElementById("11").clientHeight - document.getElementById("13").clientHeight*2-document.getElementById("14").clientHeight -90 + pageYOffset - (document.getElementById("13").clientHeight+30));
         }
     });
+    window.addEventListener('touchend', () =>{
+        if(document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 45 <= pageYOffset){
+            window.scrollTo(0, document.getElementById("13").clientHeight*2+75 + pageYOffset - (document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 45));
+        }
+        else if(document.getElementById("13").clientHeight+30 >= pageYOffset){
+            window.scrollTo(0, document.getElementById("11").clientHeight - document.getElementById("13").clientHeight*2-document.getElementById("14").clientHeight -90 + pageYOffset - (document.getElementById("13").clientHeight+30));
+        }
+    });
 }
 else{
     window.addEventListener('scroll', () =>{
