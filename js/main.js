@@ -21,13 +21,11 @@ if('ontouchstart' in window || navigator.maxTouchPoints){
 }
 else{
     window.addEventListener('scroll', () =>{
-        if(window.innerWidth>500){
-            if(document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 45 <= pageYOffset){
-                window.scrollTo(0, document.getElementById("13").clientHeight*2+75);
-            }
-            else if(document.getElementById("13").clientHeight+30 >= pageYOffset){
-                window.scrollTo(0, document.getElementById("11").clientHeight - document.getElementById("13").clientHeight*2-document.getElementById("14").clientHeight -90);
-            }
+        if(document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 45 <= pageYOffset){
+            window.scrollTo(0, document.getElementById("13").clientHeight*2+75);
+        }
+        else if(document.getElementById("13").clientHeight+30 >= pageYOffset){
+            window.scrollTo(0, document.getElementById("11").clientHeight - document.getElementById("13").clientHeight*2-document.getElementById("14").clientHeight -90);
         }
     });
 }
