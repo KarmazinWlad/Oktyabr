@@ -21,13 +21,16 @@ var y = map.clientHeight;
 const ratio = x / y;
 function coords(){
     h = window.innerHeight-145.67;
+    w = window.innerWidth;
+    console.log(map.clientHeight, h);
     if (map.clientHeight < h){
         map.style.height = `${h}px`;
         map.style.width = `${h*ratio}px`;
     }
     else {
-        map.style.width = "100%";
-        map.style.height = "auto";
+        map.style.width = `${w}px`;
+        map.style.height = `${w/ratio}px`;
+        console.log(map.style.height, map.style.width);
     }
     x = map.clientWidth;
     y = map.clientHeight;
@@ -48,7 +51,8 @@ function coords(){
     element15.coords = `${x*0.669}, ${y*0.655}, ${x*0.738}, ${y*0.723}`;
     element16.coords = `${x*0.788}, ${y*0.678}, ${x*0.894}, ${y*0.788}`;
 }
-coords();
+for(var i = 0; i < 2; i++){
+    coords();
+}
 window.addEventListener('resize', coords);
-window.addEventListener('scroll', coords);
 window.addEventListener('click', coords);

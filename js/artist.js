@@ -24,13 +24,12 @@ for(var i = 0; i < 2; i++){
     list();
 }
 window.addEventListener('resize', list);
-window.addEventListener('scroll', list);
 window.addEventListener('click', list);
 artist_burger();
 window.addEventListener('scroll', artist_burger);
 document.getElementById("burgerSpisok").addEventListener('click', () =>{
     if(document.getElementById("burgerSpisok").style.top == "71px"){
-        document.getElementById("burgerSpisok").style.top = "145.67px";
+        document.getElementById("burgerSpisok").style.top = "144.67px";
     }
     else{
         document.getElementById("burgerSpisok").style.top = "71px";

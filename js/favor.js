@@ -8,7 +8,6 @@ for (var inf in localStorage){
         a++;
     }
 }
-document.getElementsByTagName("main")[0].style.height = `${block.clientHeight}px`;
 for(const element of document.getElementsByClassName("heart")){
     element.addEventListener('click', () => {
         if (localStorage.getItem(element.parentNode.id) != null){

@@ -8,10 +8,10 @@ for(const element of document.getElementsByClassName("heart")){
     }
 }
 window.addEventListener('scroll', () =>{
-    if(document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 205.67 <= pageYOffset){
+    if(document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 45 <= pageYOffset){
         window.scrollTo(0, document.getElementById("13").clientHeight*2+75);
     }
-    else if(160.67+document.getElementById("13").clientHeight+30 >= pageYOffset){
+    else if(document.getElementById("13").clientHeight+30 >= pageYOffset){
         window.scrollTo(0, document.getElementById("11").clientHeight - document.getElementById("13").clientHeight*2-document.getElementById("14").clientHeight -90);
     }
 });
