@@ -185,7 +185,9 @@ header nav div.line{
     .line2{margin-right: 10px; margin-left: 10px; margin-top: 160px;}
     .art img{height: 35dvh;}
     .contact{width: 100%;}
-    .heart{opacity: 100%;}
+}
+@media screen and (min-width: 500px) {
+    .heart{opacity: 0%;}
 }
 main:not(.ecs){
     position: relative;
@@ -283,7 +285,6 @@ main ul li:not(.active) a:hover{
     width: 12%;
     right: 2.75%;
     top: 2.19%;
-    opacity: 0%;
 }
 .item:hover .heart{
     opacity: 100%;

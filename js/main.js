@@ -8,11 +8,23 @@ for(const element of document.getElementsByClassName("heart")){
     }
 }
 window.addEventListener('scroll', () =>{
-    if(document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 45 <= pageYOffset){
-        window.scrollTo(0, document.getElementById("13").clientHeight*2+75);
+    if(window.innerWidth>500){
+        if(document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 45 <= pageYOffset){
+            window.scrollTo(0, document.getElementById("13").clientHeight*2+75);
+        }
+        else if(document.getElementById("13").clientHeight+30 >= pageYOffset){
+            window.scrollTo(0, document.getElementById("11").clientHeight - document.getElementById("13").clientHeight*2-document.getElementById("14").clientHeight -90);
+        }
     }
-    else if(document.getElementById("13").clientHeight+30 >= pageYOffset){
-        window.scrollTo(0, document.getElementById("11").clientHeight - document.getElementById("13").clientHeight*2-document.getElementById("14").clientHeight -90);
+});
+window.addEventListener('scrollend', () =>{
+    if(window.innerWidth<=500){
+        if(document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 45 <= pageYOffset){
+            window.scrollTo(0, document.getElementById("13").clientHeight*2+75 + pageYOffset - (document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 45));
+        }
+        else if(document.getElementById("13").clientHeight+30 >= pageYOffset){
+            window.scrollTo(0, document.getElementById("11").clientHeight - document.getElementById("13").clientHeight*2-document.getElementById("14").clientHeight -90 + pageYOffset - (document.getElementById("13").clientHeight+30));
+        }
     }
 });
 for(const element of document.getElementsByClassName("heart")){

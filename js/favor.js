@@ -11,7 +11,7 @@ for (var inf in localStorage){
 for(const element of document.getElementsByClassName("heart")){
     element.addEventListener('click', () => {
         if (localStorage.getItem(element.parentNode.id) != null){
-            element.src="C:/Users/karma/Desktop/site/img/img.png";
+            element.src="https://karmazinwlad.github.io/Oktyabr/img/img.png";
             localStorage.removeItem(element.parentNode.id);
             document.getElementById("storage").removeChild(element.parentNode.parentNode)
         }
