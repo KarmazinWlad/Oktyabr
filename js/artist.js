@@ -20,7 +20,7 @@ function artist_burger () {
         document.getElementById("burgerSpisok").style.top = "71px";
 }
 }
-for(var i = 0; i < 4; i++){
+for(var i = 0; i < 2; i++){
     list();
 }
 window.addEventListener('resize', list);
