@@ -7,7 +7,7 @@ for(const element of document.getElementsByClassName("heart")){
         element.src="https://karmazinwlad.github.io/Oktyabr/img/img1.png";
     }
 }
-console.log(125);
+console.log(1);
 if('ontouchstart' in window || navigator.maxTouchPoints){
     var flag = true;
     window.addEventListener('touchend', (flag) =>{
@@ -18,13 +18,13 @@ if('ontouchstart' in window || navigator.maxTouchPoints){
     });
     window.addEventListener('scroll', (flag) =>{
         if(flag){
-            if(document.getElementById("11").clientHeight-document.getElementById("13").clientHeight-document.getElementById("14").clientHeight - 45 <= pageYOffset){
+            if(document.getElementById("11").clientHeight - document.getElementById("13").clientHeight - document.getElementById("14").clientHeight - 45 <= pageYOffset){
                 window.scrollTo(0, document.getElementById("13").clientHeight * 2 + 75);
                 window.scrollTo({ top: document.getElementById("13").clientHeight * 2 + 175, left: 0, behavior: 'smooth' });
             }
             else if(document.getElementById("13").clientHeight + 30 >= pageYOffset){
-                window.scrollTo(0, document.getElementById("11").clientHeight - document.getElementById("13").clientHeight*2-document.getElementById("14").clientHeight -90);
-                window.scrollTo({ top: document.getElementById("11").clientHeight - document.getElementById("13").clientHeight*2-document.getElementById("14").clientHeight -190, left: 0, behavior: 'smooth' });
+                window.scrollTo(0, document.getElementById("11").clientHeight - document.getElementById("13").clientHeight * 2 - document.getElementById("14").clientHeight - 90);
+                window.scrollTo({ top: document.getElementById("11").clientHeight - document.getElementById("13").clientHeight * 2 - document.getElementById("14").clientHeight - 190, left: 0, behavior: 'smooth' });
             }
         }
     });
