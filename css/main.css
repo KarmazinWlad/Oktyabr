@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'CoFo Holz VF';
-    src: local('CoFo Holz VF'), url(C:\Users\karma\Desktop\www\font\cofoholzvf.ttf) format('ttf'),
-    url(C:\Users\karma\Desktop\www\font\cofoholzvf.woff2) format('woff2'),
-    url(C:\Users\karma\Desktop\www\font\cofoholzvf.woff) format('woff'),
-    url(C:\Users\karma\Desktop\www\font\cofoholzvf.eot) format('eot');
+    src: local('CoFo Holz VF'), url(https://karmazinwlad.github.io/Oktyabr/font/cofoholzvf.ttf) format('ttf'),
+    url(https://karmazinwlad.github.io/Oktyabr/font/cofoholzvf.woff2) format('woff2'),
+    url(https://karmazinwlad.github.io/Oktyabr/font/cofoholzvf.woff) format('woff'),
+    url(https://karmazinwlad.github.io/Oktyabr/font/cofoholzvf.eot) format('eot');
 }
 
 * {
