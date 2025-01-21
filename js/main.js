@@ -7,7 +7,7 @@ for(const element of document.getElementsByClassName("heart")){
         element.src="https://karmazinwlad.github.io/Oktyabr/img/img1.png";
     }
 }
-console.log(1);
+console.log(2);
 if('ontouchstart' in window || navigator.maxTouchPoints){
     var flag = true;
     function scrolling(){
