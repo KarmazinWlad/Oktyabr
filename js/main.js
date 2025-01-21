@@ -7,7 +7,7 @@ for(const element of document.getElementsByClassName("heart")){
         element.src="https://karmazinwlad.github.io/Oktyabr/img/img1.png";
     }
 }
-console.log(1);
+console.log(2);
 function scrolling(flag){
     if(flag == true){
         if(document.getElementById("11").clientHeight - document.getElementById("13").clientHeight - document.getElementById("14").clientHeight - 45 <= pageYOffset){
@@ -23,6 +23,10 @@ function scrolling(flag){
 if('ontouchstart' in window || navigator.maxTouchPoints){
     var flag = true;
     window.addEventListener('touchend', () =>{
+        flag = true;
+        scrolling(flag);
+    });
+    window.addEventListener('touchcancel', () =>{
         flag = true;
         scrolling(flag);
     });
