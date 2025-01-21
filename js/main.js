@@ -29,6 +29,7 @@ if('ontouchstart' in window || navigator.maxTouchPoints){
     });
 }
 else{
+    console.log("1");
     window.addEventListener('scroll', () =>{
         if(document.getElementById("11").clientHeight - document.getElementById("13").clientHeight - document.getElementById("14").clientHeight - 45 <= pageYOffset){
             window.scrollTo(0, document.getElementById("13").clientHeight * 2 + 75);
