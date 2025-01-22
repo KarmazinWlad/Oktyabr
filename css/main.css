@@ -205,6 +205,9 @@ main.gallery{
     margin-right: 0;
     position: relative;
 }
+.gallery_item{
+    width: 100%;
+}
 main h1{
     font-size: xx-large;
     font-weight: 500;
