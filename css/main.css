@@ -247,9 +247,12 @@ nav a:not(.active):hover{
 @media screen and (min-width: 500px) {
     .heart{opacity: 0%;}
 }
-@media screen and (max-width: 300px){
+@media screen and (max-width: 400px){
     .line2{display: none;}
 }
+
+
+
 main:not(.ecs){
     margin-left: 16px;
     margin-right: 23px;
@@ -269,7 +272,7 @@ main h2{
     margin-left: 5px;
     padding-bottom: 12px;
 }
-main p{
+main.info p{
     font-size: small;
     padding-bottom: 40px;
     width: 60%;
