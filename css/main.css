@@ -17,144 +17,186 @@ body{
 }
 a{
     text-decoration: none;
-    color:black;
+    color: black;
+    transition: color 0.5s ease;
 }
 ul{
     list-style: none;
 }
-img {
+img{
     max-width: 100%;
 }
-.container{
-    width: 100%;
-    margin: 0 auto;
-    background-color: white;
-    z-index: 1;
-}
+
+
+
 header{
     position: fixed;
     top: 0;
-    background-color: white ;
+    width: 100%;
+    z-index: 3;
 }
 header nav{
-    float: left;
     width: 100%;
+    background-color: white;
 }
-header nav ul.first{
-    font-size: medium;
-    width: 40%;
-    height: auto;
+.firstLineMenu{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    height: 75px;
 }
-header nav .favorite{
-    float:right;
-    width: 35px;
-    margin-top: 19px;
-    margin-right: 15px;
+.firstLineMenu li:not(.burgerMenu){
+    position: relative;
+    display: flex;
+    width: fit-content;
 }
-header nav ul{
+.mainMenu{
+    position: relative;
     display: flex;
     justify-content: space-between;
-    margin-left: 16px;
-    margin-right: 23px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    width: 500px;
+    margin: auto 25px;
 }
-header nav ul.second li{
-    left: 16px;
-    right: 23px;
+.favorite{
+    position: relative;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: auto 15px;
+}
+.favorite img{
+    position: relative;
+    width: 45px;
+}
+.line{
+    display: block;
+    height: 1px;
+    background-color: black;
+}
+.secondLineMenu{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    width: calc(100% - 40px);
+    height: 75px;
+    margin: auto 20px;
+}
+.secondLineMenu li{
+    position: relative;
+    display: flex;
+    width: fit-content;
+    text-transform: uppercase;
     font-size: 22px;
     letter-spacing: 2px;
 }
-header nav ul.second li a sup.small{
-    letter-spacing:0px;
-    font-size: 12px;
-    margin-right: 9px;
+.arrow-1{
+    position: relative;
+    display: flex;
+    height: inherit;
+    width: calc(100% - 300px);
 }
-header nav ul li.active{
+.arrow-1 div{
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 0.5px;
+    width: 100%;
+    background-color: black;
+}
+.arrow-1 div::after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 0.5px;
+    width: 5px;
+    top: -1.6px;
+    right: -1.2px;
+    transform: rotate(45deg);
+    background-color: black;
+}
+.arrow-1 div::before{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 0.5px;
+    width: 5px;
+    top: 1.6px;
+    right: -1.2px;
+    transform: rotate(-45deg);
+    background-color: black;
+}
+.arrow-2{
+    position: absolute;
+    width: 75px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    container-type: size;
+    z-index: 2;
+}
+.arrow-2 div{
+    position: relative;
+    display: block;
+    height: 0.5px;
+    top: calc(50cqh + 3px);
+    background-color: black;
+}
+.arrow-2 div::after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 0.5px;
+    width: 5px;
+    top: -1.6px;
+    right: -1.2px;
+    transform: rotate(45deg);
+    background-color: black;
+}
+.arrow-2 div::before{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 0.5px;
+    width: 5px;
+    top: 1.6px;
+    right: -1.2px;
+    transform: rotate(-45deg);
+    background-color: black;
+}
+.secondLineMenu a{
+    display: inline-flex;
+    margin: auto 0;
+}
+.secondLineMenu a:not(.secondSite){
     font-weight: bold;
 }
-header nav ul li:not(.active) a:hover{
-    color:red;
-    transition: all 500ms ease;
+.secondSite p{
+    padding-right: 5px;
 }
-header nav ul div.arrow{
-    width:calc(100% - 280px);
+.small{
+    text-transform: lowercase;
+    font-size: 12px;
+    width: 75px;
+    letter-spacing: 0px;
+    margin: 0;
+    z-index: 3;
 }
-header nav ul div.arrow div{
-    content: '';
-    display: block;
-    height: 0.5px;
-    width: all;
-    background-color: black;
-    position: relative;
-    top: 13px;
+.active{
+    font-weight: bold;
 }
-header nav ul div.arrow div::after{
-    content: '';
-    display: block;
-    height: 0.5px;
-    width: 4px;
-    background-color: black;
-    position: absolute;
-    top: 1.5px;
-    right: -0.5px;
-    transform: rotate(-45deg);
+nav a:not(.active):hover{
+    color: red;
+    transition: color 0.5s ease;
 }
-header nav ul div.arrow div::before{
-    content: '';
-    display: block;
-    height: 0.5px;
-    width: 4px;
-    background-color: black;
-    position: absolute;
-    top: -1px;
-    right: -0.5px;
-    transform: rotate(45deg);
+.actual{
+    text-transform: capitalize;
+    margin: auto 0;
+    cursor: default;
 }
-header nav ul div.arrow-2{
-    position: absolute;
-    width: 63px;
-    right: 8px;
-}
-header nav ul div.arrow-2 div{
-    content: '';
-    display: block;
-    height: 0.5px;
-    width: all;
-    background-color: black;
-    position: relative;
-    top: 16px;
-}
-header nav ul div.arrow-2 div::after{
-    content: '';
-    display: block;
-    height: 0.5px;
-    width: 4px;
-    background-color: black;
-    position: absolute;
-    top: 1px;
-    right: -0.5px;
-    transform: rotate(-45deg);
-}
-header nav ul div.arrow-2 div::before{
-    content: '';
-    display: block;
-    height: 0.5px;
-    width: 4px;
-    background-color: black;
-    position: absolute;
-    top: -1.5px;
-    right: -0.5px;
-    transform: rotate(45deg);
-}
-header nav div.line{
-    content: '';
-    display: block;
-    margin-bottom: 0;
-    height: 0.5px;
-    width: all;
-    background-color: black;
-}
+
+
+
 .burger{
     width: 50px;
 }
@@ -165,48 +207,57 @@ header nav div.line{
     background-color: black;
     margin-bottom: 5px;
 }
-.burgerMenu{
-    margin-top: 23.31px;
-    justify-content: left;
-    display: none;
-}
-.popup{
+#bar{
     margin: 0;
 }
-@media screen and (max-width: 1000px) {
-    .burgerMenu{display: flex;}
-    .MainMenu{display: none;}
+#burgerMenu{
+    display: flex;
+    overflow: hidden;
+    justify-content: left;
 }
-@media screen and (max-width: 500px) {
+.burgerMenu{
+    display: none;
+    margin: auto 25px;
+}
+.popup{
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 1s ease-in-out;
+}
+.popup.flag{
+    transition: max-height 1s ease-in-out;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .endline{display: none}
+}
+@media screen and (max-width: 700px){
+    .burgerMenu{display: block;}
+    #mainMenu{ display: none;}
+}
+@media screen and (max-width: 600px) {
     .line3{display: none;}
-    .line1{display: none;}
     .endline{display: none;}
     .actual{display: none;}
-    .line2{margin-right: 10px; margin-left: 10px; margin-top: 160px;}
-    .art img{height: 35dvh;}
+    .art img{height: 35vh;}
     .contact{width: 100%;}
 }
 @media screen and (min-width: 500px) {
     .heart{opacity: 0%;}
 }
+@media screen and (max-width: 300px){
+    .line2{display: none;}
+}
 main:not(.ecs){
-    position: relative;
-    margin-top: 145.67px;
     margin-left: 16px;
     margin-right: 23px;
     z-index: 0;
 }
-main.ecs{
-    position: relative;
-    margin-top: 145.67px;
-}
 main.gallery{
     margin-left: 0;
     margin-right: 0;
-    position: relative;
-}
-.gallery_item{
-    width: 100%;
 }
 main h1{
     font-size: xx-large;
@@ -233,67 +284,65 @@ main ul li{
     font-size: small;
     padding-right: 20px;
     padding-bottom: 40px;
-}   
-main ul li:not(.active) a:hover{
-    color:red;
-    transition: all 500ms ease;
-}
-.gallery{
-    width: 100%;
 }
 .cont{
-    display: flex;
     position: relative;
+    display: flex;
+    float: left;
+    width: 100%;
 }
-.cont section:not(.endline){
-    margin-right: 10px;
-    width: 90%;
+.cont section:not(.item){
+    margin: 0 15px;
 }
-.gallery_item{
-    box-shadow:0px 0px 10px 0px gray;
+.line2{
+    padding-top: 150px;
 }
 .endline{
-    margin-top: 160px;
-    width: 90%;
+    padding-top: 150px;
+}
+.item{
+    position: relative;
+}
+.gallery_item{
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px gray;
 }
 .author{
-    margin-top: 15px;
-    text-transform: uppercase;
     font-weight: bold;
+    text-transform: uppercase;
     text-align: left;
+    font-size: 13px;
+    padding-top: 15px;
 }
 .series{
     text-transform: uppercase;
     text-align: left;
+    font-size: 13px;
 }
 .series sup{
-    text-transform:lowercase;
+    text-transform: lowercase;
 }
 .atribute{
+    text-transform: lowercase;
     text-align: right;
+    font-size: 13px;
 }
 .year{
     text-align: right;
-    margin-bottom: 30px;
-}
-.item p{
-    padding: 0;
-    width: 100%;
-}
-.line2{
-    margin-top: 160px;
+    font-size: 13px;
+    padding-bottom: 30px;
 }
 .heart{
     position: absolute;
-    width: 12%;
-    right: 2.75%;
-    top: 2.19%;
+    width: 13%;
+    top: 3%;
+    right: 3%;
+    opacity: 0%;
+    transition: opacity 0.3s ease;
 }
 .item:hover .heart{
     opacity: 100%;
-}
-.cont section{
-    position: relative;
+    transition: opacity 0.3s ease;
 }
 .example{
     position: relative;

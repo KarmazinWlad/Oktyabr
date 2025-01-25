@@ -10,35 +10,43 @@
  <body>
     <header class="container">
         <nav>
-            <a class="favorite" href="Избранное.html"><img src="img\img.png" alt="Избранное"></a>
-            <ul class="burgerMenu" id="burgerMenu">
-                <li><div class="burger" id="burger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div></li> 
-                <li>
-                    <ul id="popup" class="popup" style="display: none;">
+            <ul class="firstLineMenu">
+                <li class="burgerMenu">
+                    <ul id="burgerMenu">
+                        <li>
+                            <div class="burger" id="burger">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar" id="bar"></div>
+                            </div>
+                        </li> 
+                        <li class="popup">
+                            <ul id="popup">
+                                <li><a href="О проекте.html">О проекте</a></li>
+                                <li><a class="active" href="экспозиция.html">Экспозиция</a></li>
+                                <li><a href="художники.html">Художники</a></li>
+                                <li><a href="Связаться с нами.html">Связаться с нами</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="mainMenu">
+                    <ul class="mainMenu">
                         <li><a href="О проекте.html">О проекте</a></li>
-                        <li class="active"><a href="экспозиция.html">Экспозиция</a></li>
+                        <li><a class="active" href="экспозиция.html">Экспозиция</a></li>
                         <li><a href="художники.html">Художники</a></li>
                         <li><a href="Связаться с нами.html">Связаться с нами</a></li>
                     </ul>
                 </li>
+                <li><a class="favorite" href="Избранное.html"><img src="img\img.png" alt="Избранное"></a></li>
             </ul>
-            <div id="MainMenu" class="MainMenu">
-                <ul class="first">
-                    <li><a href="О проекте.html">О проекте</a></li>
-                    <li class="active"><a href="экспозиция.html">Экспозиция</a></li>
-                    <li><a href="художники.html">Художники</a></li>
-                    <li><a href="Связаться с нами.html">Связаться с нами</a></li>
-                </ul>
-            </div>
             <div class="line"></div>
-            <ul class="second">
-                <li><a href="index.html"><b>НОЯБРЬ</b></a></li>
-                <li class="actual">Экспозиция</li>
-                <li><a href="">НОЯБРЬ <sup class="small">студия</sup></a></li>
+            <ul class="secondLineMenu">
+                <li><a href="index.html">ноябрь</a></li>
+                <li><p class="actual">Экспозиция</p></li>
+                <li>
+                    <a class="secondSite" href=""><p>НОЯБРЬ</p><sup class="small">студия</sup></a>
+                </li>
                 <div class="arrow-2"><div></div></div>
             </ul>
             <div class="line"></div>
