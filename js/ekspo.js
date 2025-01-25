@@ -22,7 +22,6 @@ const ratio = x / y;
 function coords(){
     h = window.innerHeight-145.67;
     w = window.innerWidth;
-    console.log(map.clientHeight, h);
     if (map.clientHeight < h){
         map.style.height = `${h}px`;
         map.style.width = `${h*ratio}px`;
@@ -30,7 +29,6 @@ function coords(){
     else {
         map.style.width = `${w}px`;
         map.style.height = `${w/ratio}px`;
-        console.log(map.style.height, map.style.width);
     }
     x = map.clientWidth;
     y = map.clientHeight;

@@ -15,7 +15,6 @@ function artist_burger () {
         document.getElementById("burgerSpisok").style.display = "block";
     }
     else {
-        console.log(document.getElementsByTagName("header")[0].clientHeight + document.getElementsByClassName("ul")[0].clientHeight);
         document.getElementById("burgerSpisok").style.display = "none";
         document.getElementById("burgerSpisok").style.top = "71px";
 }
